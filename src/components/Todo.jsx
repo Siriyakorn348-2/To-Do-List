@@ -22,6 +22,7 @@ export default function Todo() {
       return [];
     }
   });
+  const [todoToEdit, setTodoToEdit] = useState(null);
 
   useEffect(() => {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(todos));
@@ -33,8 +34,13 @@ export default function Todo() {
 
   return (
     <div>
-      <Form todos={todos} setTodos={setTodos} />
-      <TodoList todos={todos} setTodos={setTodos} /> 
+      <Form
+        todos={todos}
+        setTodos={setTodos}
+        todoToEdit={todoToEdit}
+        setTodoToEdit={setTodoToEdit}
+      />
+      <TodoList todos={todos} setTodos={setTodos} setTodoToEdit={setTodoToEdit} todoToEdit={todoToEdit} /> 
       <Footer completedTodos={completedTodos} totalTodos={totalTodos}/>
 
     </div>

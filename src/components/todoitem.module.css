@@ -1,0 +1,58 @@
+.item{
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.itemName{
+    font-weight: bold;
+    padding: 20px 36px 20px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.line{
+    border: 1px solid #f4f4f4;
+}
+.circle{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #f7ca18;
+    background: transparent;
+    cursor: pointer;
+    flex: 0 0 auto;
+    padding: 0;
+}
+.circleDone{
+    background: #f7ca18;
+    box-shadow: inset 0 0 0 3px white;
+}
+.deleteButton{
+    background-color: #f7ca18;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    margin-top:  -5px;
+    margin-left: auto;
+    margin-right: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.completed {
+    text-decoration: line-through;
+    color: rgb(11, 11, 11);
+    cursor: pointer;
+  }
+
+.itemName span {
+    flex: 1;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+  

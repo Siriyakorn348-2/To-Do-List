@@ -22,7 +22,7 @@ git clone https://github.com/Siriyakorn348-2/To-Do-List.git
 2. เข้าไปที่โฟลเดอร์โปรเจกต์
 
 ```bash
-cd To-Do-Lis
+cd To-Do-List
 ```
 
 3. ติดตั้ง dependencies
